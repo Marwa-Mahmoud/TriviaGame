@@ -1,3 +1,53 @@
-h1{
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+div{
 	text-align: center;
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+.content{
+	background-color: #F5F5F5;
+	height: 1000px;
+	padding-top: 50px;
+	border: double #4682B4;
+	margin-top: 0px;
+
+
+}
+h1{
+	font-size: 60px;
+	color: #4682B4;
+	font-family: "Courgette", serif;
+}
+h2{
+	font-size: 50px;
+	color: #4682B4;
+	font-family: "Courgette", serif;
+}
+
+#start-btn{
+
+	height: 70px;
+	width: 300px;
+	font-size: 32px;
+	background-color: #D3D3D3;
+	color: #4682B4;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/blueblocks.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
