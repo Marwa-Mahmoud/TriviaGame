@@ -18,7 +18,7 @@ var data = [
 	correctAnswer: "cow", //1
 	gifImage: "assets/images/cow.gif"
 	}
-/*	,
+	,
 	{question: "What are the most poisonous snakes in the world?",
 	answers: ["cobras", "vipers", "anaconda", "sea snakes"],
 	correctAnswer: "sea snakes", //3
@@ -30,7 +30,7 @@ var data = [
 	correctAnswer: "50 to 70", //2
 	gifImage: "assets/images/hummingbird.gif"
 	}
-*/
+
 ];
 
 var index = 0;
@@ -73,7 +73,7 @@ $(document).ready(function(){
 		$("#question").hide();///
 		$("#result").html("");///
 		$("#correct-answer").html("");///
-		var timer = 20;
+		var timer = 30;
 		reloadTimer(timer);
 		displayQuestion();
 	}
@@ -104,8 +104,7 @@ $(document).ready(function(){
 		var answers = data[index].answers;
 		$("#question-text").html(question);
 		for(var i=0; i<answers.length; i++){
-			$("#answers").children().eq(i).html("<a href='#' class='list-group-item'>"
-													+answers[i]+"</a>");
+			$("#answers").children().eq(i).html(answers[i]);
 		}
 		$("#answers").show();
 		$("#question").show();
@@ -135,8 +134,9 @@ $(document).ready(function(){
 		$("#final-result").append("Incorrect Answers: "+incorrect+"<br>");
 		$("#final-result").append("Unanswered: "+unanswered+"<br>");
 		$("#final-result").append("<h3 id='start-over'> Start Over </h3>");
-		$("#start-over").hover(function(){$(this).css("color", "yellow");},
-								 function(){$(this).css("color", "pink");});
+		$("#start-over").hover(function(){$(this).css("color", "#4682B4");},
+								 function(){$(this).css("color", "black");});
+		$("#start-over").css("font-size", "42px");
 
 		$("#start-over").on("click", function(){
 
@@ -151,13 +151,13 @@ $(document).ready(function(){
 
    var checkAnswer = function(ans){
    	if (ans === data[index].correctAnswer){
-   		$("#result").html("Yesss!");
+   		$("#result").html("Yesss! Good Job!");
    		correct++;
 
    		
    	}
    	else{
-   		$("#result").html("Noooo!");
+   		$("#result").html("Ooops! Wrong Answer");
    		incorrect++
    	}
    	displayAnswer();
