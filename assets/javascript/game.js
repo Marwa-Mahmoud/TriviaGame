@@ -7,13 +7,25 @@ var data = [
 	gifImage: "assets/images/fish.gif"
 	}
 	,
+	{question: "In one day your heart beats...",
+	answers: ["1000 times", "10,000 times", "100,000 times", "1 million times"],
+	correctAnswer: "100,000 times",
+	gifImage: "assets/images/heartbeat.gif"
+	}
+	,
 	{question: "What is the length of the chameleon tongue?",
 	answers: ["twice its body", "half its body", "one and half times of its body", "same as its body"],
 	correctAnswer: "one and half times of its body", //2
 	gifImage: "assets/images/chameleon.gif"
 	}
 	,
-	{question: "What animal can sleep standing?",
+	{question: "Which planet is made entirely of gases.",
+	answers: ["Earth", "Saturn", "Mars", "Jupiter"],
+	correctAnswer: "Jupiter",
+	gifImage: "assets/images/jupiter.gif"
+	}
+	,
+	{question: "Which animal can sleep standing?",
 	answers: ["rabbit", "cow", "dog", "cat"],
 	correctAnswer: "cow", //1
 	gifImage: "assets/images/cow.gif"
@@ -32,6 +44,7 @@ var data = [
 	}
 
 ];
+
 
 var index = 0;
 var correct = 0;
