@@ -132,10 +132,10 @@ $(document).ready(function(){
 		index++;
 		if(index === data.length){
 			index = 0;
-			setTimeout(displayFinalResult, 3000);
+			setTimeout(displayFinalResult, 7000);
 		}
 		else{	
-			setTimeout(setScreen, 3000);
+			setTimeout(setScreen, 7000);
 		}
 
 	}

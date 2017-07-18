@@ -19,7 +19,7 @@ body, html {
 
 div{
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	font-size: 24px;
 	line-height: 40px;
 }
@@ -27,7 +27,7 @@ div{
 .content{
 	background-color: #F5F5F5;
 	height: 900px;
-	padding-top: 50px;
+	padding-top: 30px;
 	border: double #4682B4;
 	margin-top: 0px;
 
